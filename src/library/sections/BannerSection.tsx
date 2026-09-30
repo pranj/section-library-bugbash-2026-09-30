@@ -227,7 +227,7 @@ const BannerComponent: PuckComponent<BannerSectionProps> = ({
     <PageSection
       background={styles.backgroundColor}
       verticalPadding="sm"
-      className={`flex ${justifyClass} ${textAlignClass} items-center`}
+      className={`flex ${justifyClass} ${textAlignClass} items-center border-b-4 border-dashed border-fuchsia-600`}
     >
       <EntityField
         displayName={pt("fields.bannerText", "Banner Text")}

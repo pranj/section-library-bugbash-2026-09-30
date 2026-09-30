@@ -9,11 +9,11 @@ import {
   msg,
   SectionConfig,
 } from "@yext/visual-editor";
-import { VisibilityWrapper } from "../shared/sectionSupport/atoms/visibilityWrapper.tsx";
-import { HeadingTextProps } from "./HeadingText.tsx";
+import { VisibilityWrapper } from "../../library/shared/sectionSupport/atoms/visibilityWrapper.tsx";
+import { HeadingTextProps } from "../../library/sections/HeadingText.tsx";
 import { AnalyticsScopeProvider } from "@yext/pages-components";
-import { defaultTeamCardSlotData } from "../shared/sectionSupport/pageSections/TeamSection/TeamCard.tsx";
-import { TeamCardsWrapperProps } from "../shared/sectionSupport/pageSections/TeamSection/TeamCardsWrapper.tsx";
+import { defaultTeamCardSlotData } from "../../library/shared/sectionSupport/pageSections/TeamSection/TeamCard.tsx";
+import { TeamCardsWrapperProps } from "../../library/shared/sectionSupport/pageSections/TeamSection/TeamCardsWrapper.tsx";
 import {
   ComponentErrorBoundary,
   forwardHeadingLevel,
@@ -23,7 +23,7 @@ import {
   MappedCardsSectionConditionalRender,
   MappedCardsSectionContent,
   MappedCardsSectionShell,
-} from "../shared/sectionSupport/pageSections/mappedCardsSectionUtils.tsx";
+} from "../../library/shared/sectionSupport/pageSections/mappedCardsSectionUtils.tsx";
 
 export interface TeamSectionProps {
   /**

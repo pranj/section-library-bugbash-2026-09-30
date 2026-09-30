@@ -9,7 +9,6 @@ import { TestimonialSection } from "../library/sections/TestimonialSection.tsx";
 import { TestimonialCardsWrapper } from "../library/shared/sectionSupport/pageSections/TestimonialSection/TestimonialCardsWrapper.tsx";
 import { ProductSection } from "../library/sections/ProductSection.tsx";
 import { ProductCardsWrapper } from "../library/shared/sectionSupport/pageSections/ProductSection/ProductCardsWrapper.tsx";
-import { TeamSection } from "../library/sections/TeamSection.tsx";
 import { TeamCardsWrapper } from "../library/shared/sectionSupport/pageSections/TeamSection/TeamCardsWrapper.tsx";
 import { EventSection } from "../library/sections/EventSection.tsx";
 import { EventCardsWrapper } from "../library/shared/sectionSupport/pageSections/EventSection/EventCardsWrapper.tsx";
@@ -299,7 +298,6 @@ type WrapperCase = {
   sectionConfig:
     | typeof TestimonialSection
     | typeof ProductSection
-    | typeof TeamSection
     | typeof EventSection
     | typeof InsightSection;
   wrapperName: string;
@@ -343,19 +341,6 @@ const wrapperCases: WrapperCase[] = [
       locale: "en",
       c_products: {
         products: [{ name: "Galaxy Burger" }],
-      },
-    },
-  },
-  {
-    sectionName: "Team Section",
-    sectionConfig: TeamSection,
-    wrapperName: "Team Cards Wrapper",
-    wrapperConfig: TeamCardsWrapper,
-    mappedField: "c_team.people",
-    populatedDocument: {
-      locale: "en",
-      c_team: {
-        people: [{ name: "Captain Cosmo" }],
       },
     },
   },

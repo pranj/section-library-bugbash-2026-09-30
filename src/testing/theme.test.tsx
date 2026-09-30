@@ -28,7 +28,6 @@ import { ProfessionalHeroSection } from "../library/sections/ProfessionalHeroSec
 import { PromoSection } from "../library/sections/PromoSection.tsx";
 import { ReviewsSection } from "../library/sections/ReviewsSection.tsx";
 import { StaticMapSection } from "../library/sections/StaticMapSection.tsx";
-import { TeamSection } from "../library/sections/TeamSection.tsx";
 import { TestimonialSection } from "../library/sections/TestimonialSection.tsx";
 import { VideoSection } from "../library/sections/VideoSection.tsx";
 import { ExpandedHeader } from "../library/sections/ExpandedHeader.tsx";
@@ -76,7 +75,6 @@ describe("ThemeTest", async () => {
       PromoSection,
       ReviewsSection,
       StaticMapSection,
-      TeamSection,
       TestimonialSection,
       VideoSection,
       ExpandedHeader,
